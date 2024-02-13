@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicering av webbplats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Startsida</a>
+        <a href="images.html">Bilder</a>
+        <a href="publish.html">Arbetsprocess</a>
+    </header>
+    <main id="infoText">
+        <p>
+            Först skapade jag en mapp vid namn moment1. Sedan navigerade jag till mappen och skrev i kommandotolken "npm
+            init". Där skrev jag in author och lämnade resten tomt. Jag behövde parcel för denna uppgiften, så jag
+            importerade paketet genom att skriva "npm install parcel". Detta gav mig en mapp vid namn "node_modules" och
+            ".parcel-cache". Sedan ändrade jag scripts i package.json-filen till detta:
+            <br>
+            <br>
+            "scripts": {
+            <br>
+            "start": "parcel",
+            <br>
+            "build": "parcel build"
+            <br>
+            }
+            <br>
+            <br>
+            "start": "parcel" gör så att vi kan starta en localhost som visar uppdateringar i realtid utan användning av
+            Live-server. Det andra kommandot skapar en dist mapp som innehåller de transpilerade filerna. Dessa filer är
+            de som kommer publiceras på hemsidan när vi uppdaterar github-repot.
+            <br>
+            <br>
+            Genom att koppla github-repot till netlify och ge den build command:
+            <br> <br>npm run build
+            <br>
+            <br>kommer sidan automatiskt
+
+            uppdateras när jag pushar nya ändringar till repot. Publish directoryn är satt till dist då det är de
+            distruberade filerna som ska laddas upp.
+        </p>
+    </main>
+    <footer id="publish">
+        <p>Inlämningsuppgift för Moment 1 i Front-end Webbutveckling - DT211G <br>
+            Av Adam Sjögren</p>
+    </footer>
+</body>
+
+</html>

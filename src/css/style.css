@@ -4,8 +4,223 @@
     box-sizing: border-box;
 }
 
-.container {
-    height: 100px;
+/* Styles för index.html */
+header {
     width: 100%;
     background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header a:hover {
+    color: #FFF;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+    line-height: 1.6;
+}
+
+#info p {
+    font-size: 1.75em;
+    width: 50%;
+    background-color: yellowgreen;
+    padding: 2em;
+    border-radius: 10px;
+
+}
+
+#index {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: orange;
+}
+
+#index p {
+    font-size: 1.75em;
+
+}
+
+/* Styles för index.html slut */
+
+/* Styles för images.html */
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-text {
+    font-size: 2.5em;
+    margin: 2em 0;
+}
+
+#imageContainer picture {
+    object-fit: contain;
+    text-align: center;
+}
+
+#imageContainer img {
+    width: 50%;
+}
+
+#images {
+    bottom: 0;
+    margin-top: 1em;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: orange;
+    font-size: 1.75em;
+}
+
+/* Styles för images.html slut */
+
+
+/* Styles för publish.html*/
+
+#infoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#infoText p {
+    font-size: 1.75em;
+    width: 50%;
+    background-color: yellowgreen;
+    padding: 2em;
+    border-radius: 10px;
+
+}
+
+#publish {
+    bottom: 0;
+    margin-top: 1em;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: orange;
+    font-size: 1.75em;
+}
+
+/* Styles för publish.html slut */
+
+/* Media queries för header */
+
+@media screen and (max-width:800px) {
+    header a {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header a {
+        font-size: 1.25em;
+    }
+}
+
+/* Media queries för header slut */
+
+/* Media queries */
+
+@media screen and (max-width:1500px) {
+    #info p {
+        font-size: 1.6em;
+    }
+
+    #infoText p {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #info p {
+        font-size: 1.5em;
+        width: 70%;
+    }
+
+    #infoText p {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    #index {
+        position: static;
+    }
+
+    #index p {
+        font-size: 1.5em;
+    }
+
+    #infoText p {
+        width: 90%;
+    }
+
+    #imageContainer img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #info p {
+        font-size: 1.25em;
+        width: 100%;
+    }
+
+    #infoText p {
+        width: 100%;
+    }
+
+    #publish {
+        position: static;
+    }
+
+    footer {
+        position: fixed;
+    }
+
+    footer p {
+        font-size: 1.25em;
+    }
+
+    .image-text {
+        font-size: 2em;
+    }
+
+    #images {
+        position: static;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    footer {
+        position: static;
+    }
+
+    #imageContainer img {
+        width: 90%;
+    }
+
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Startsida</a>
+        <a href="images.html">Bilder</a>
+        <a href="publish.html">Arbetsprocess</a>
+    </header>
+    <main id="imageContainer">
+        <h3 class="image-text">Bild 1</h3>
+        <picture>
+            <source srcset="images/image1.jpg?as=avif" type="image/avif">
+            <source srcset="images/image1.jpg?as=webp" type="image/webp">
+            <source srcset="images/image1.jpg" type="image/jpeg">
+            <img src="images/image1.jpg" alt="Bild på löv i höst">
+        </picture>
+        <h3 class="image-text">Bild 2</h3>
+        <picture>
+            <source srcset="images/image2.jpg?as=avif" type="image/avif">
+            <source srcset="images/image2.jpg?as=webp" type="image/webp">
+            <source srcset="images/image2.jpg" type="image/jpeg">
+            <img src="images/image2.jpg" alt="En golden retriever">
+        </picture>
+        <h3 class="image-text">Bild 3</h3>
+        <picture>
+            <source srcset="images/image3.jpg?as=avif" type="image/avif">
+            <source srcset="images/image3.jpg?as=webp" type="image/webp">
+            <source srcset="images/image3.jpg" type="image/jpeg">
+            <img src="images/image3.jpg" alt="En förare som åker dirtbike">
+        </picture>
+        <h3 class="image-text">Bild 4</h3>
+        <picture>
+            <source srcset="images/image4.jpg?as=avif" type="image/avif">
+            <source srcset="images/image4.jpg?as=webp" type="image/webp">
+            <source srcset="images/image4.jpg" type="image/jpeg">
+            <img src="images/image4.jpg" alt="Closeup av gyllene sädesfält mot en suddig blå himmel">
+        </picture>
+        <h3 class="image-text">Bild 5</h3>
+        <picture>
+            <source srcset="images/image5.jpg?as=avif" type="image/avif">
+            <source srcset="images/image5.jpg?as=webp" type="image/webp">
+            <source srcset="images/image5.jpg" type="image/jpeg">
+            <img src="images/image5.jpg" alt="En röd panda som sitter på en trästubbe med löv i bakgrunden">
+        </picture>
+    </main>
+    <footer id="images">
+        <p>Inlämningsuppgift för Moment 1 i Front-end Webbutveckling - DT211G <br>
+            Av Adam Sjögren</p>
+    </footer>
+</body>
+
+</html>
