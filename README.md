@@ -1,0 +1,1 @@
+Testar NPM för publicering och automatisering.
